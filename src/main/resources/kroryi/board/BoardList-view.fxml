@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.Controller">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="87.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+         <children>
+              <Button mnemonicParsing="false" onAction="#moveToInsert" prefHeight="29.0" prefWidth="126.0" text="Write" />
+            <Button mnemonicParsing="false" onAction="#moveToUpdate" prefHeight="29.0" prefWidth="126.0" text="수정" />
+            <Button mnemonicParsing="false" onAction="#moveToDelete" prefHeight="29.0" prefWidth="126.0" text="삭제" />
+              <Button mnemonicParsing="false" onAction="#close" prefHeight="29.0" prefWidth="126.0" text="close" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+              <TableView fx:id="boardTableView" prefHeight="371.0" prefWidth="557.0">
+                  <columns>
+                      <TableColumn fx:id="colNo" prefWidth="37.0" text="No" />
+                      <TableColumn fx:id="colTitle" prefWidth="273.0" text="Title" />
+                      <TableColumn fx:id="colWriter" minWidth="0.0" prefWidth="81.0" text="Writer" />
+                      <TableColumn fx:id="colRegDate" minWidth="0.0" prefWidth="83.0" text="Reg Date" />
+                      <TableColumn fx:id="colUpdDate" prefWidth="96.0" text="Upd Date" />
+                  </columns>
+              </TableView>
+            <Pagination fx:id="pagination" prefHeight="57.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </center>
+   <left>
+        <fx:include source="MENU.fxml" />
+   </left>
+   <top>
+      <VBox alignment="CENTER">
+         <children>
+            <Label fx:id="helloUser" alignment="TOP_RIGHT" contentDisplay="RIGHT" prefHeight="19.0" prefWidth="735.0" text="xx님이 로그인하셨습니다" />
+              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="577.0" text="Board List">
+                  <font>
+                      <Font size="30.0" />
+                  </font>
+              </Label>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

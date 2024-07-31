@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.InsertController">
+   <children>
+      <Button layoutX="243.0" layoutY="434.0" mnemonicParsing="false" onAction="#insert" text="저장" />
+      <Label layoutX="316.0" layoutY="45.0" text="Board Write">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="118.0" text="Title">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="173.0" prefHeight="30.0" prefWidth="71.0" text="Writer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="229.0" text="Conatent">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTitle" layoutX="223.0" layoutY="119.0" prefHeight="29.0" prefWidth="276.0" promptText="제목을 입력하시오">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfWriter" layoutX="223.0" layoutY="174.0" prefHeight="29.0" prefWidth="276.0" promptText="작성자" />
+      <Button layoutX="407.0" layoutY="434.0" mnemonicParsing="false" onAction="#moveToList" text="나가기" />
+      <TextArea fx:id="taContent" layoutX="223.0" layoutY="220.0" prefHeight="200.0" prefWidth="276.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.RegisterController">
+   <children>
+      <Label layoutX="342.0" layoutY="48.0" text="Register">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="124.0" text="User Id :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="177.0" text="Password :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="223.0" text="Password (re) :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfid" layoutX="342.0" layoutY="128.0" prefHeight="29.0" prefWidth="269.0" />
+      <TextField fx:id="tfusername" layoutX="342.0" layoutY="289.0" prefHeight="29.0" prefWidth="269.0" />
+      <Label layoutX="175.0" layoutY="285.0" text="User Name :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="233.0" layoutY="413.0" mnemonicParsing="false" onAction="#register" text="Join" />
+      <Button layoutX="459.0" layoutY="413.0" mnemonicParsing="false" onAction="#goToLogin" text="Go to Login" />
+      <PasswordField fx:id="pfpassword" layoutX="342.0" layoutY="178.0" prefHeight="29.0" prefWidth="269.0" />
+      <PasswordField fx:id="pfrepassword" layoutX="342.0" layoutY="224.0" prefHeight="29.0" prefWidth="269.0" />
+   </children>
+</AnchorPane>

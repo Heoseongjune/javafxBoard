@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.LoginController">
+   <children>
+      <Label layoutX="2.0" layoutY="40.0" prefHeight="93.0" prefWidth="800.0" styleClass="title-label" text="로그인">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="196.0" text="ID :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="263.0" text="Password :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfid" layoutX="270.0" layoutY="197.0" prefHeight="29.0" prefWidth="236.0" />
+      <Button layoutX="282.0" layoutY="359.0" mnemonicParsing="false" onAction="#login" text="Login">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="tfpw" layoutX="270.0" layoutY="264.0" prefHeight="29.0" prefWidth="236.0" />
+      <Button layoutX="422.0" layoutY="359.0" mnemonicParsing="false" onAction="#goToRegister" text="Register">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

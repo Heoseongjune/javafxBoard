@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.ReadController">
+   <children>
+      <Label layoutX="291.0" layoutY="48.0" text="게시판 상세보기">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="128.0" text="제목">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="197.0" text="작성자">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="265.0" text="작성일자">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="323.0" text="내용">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTitle" editable="false" layoutX="286.0" layoutY="129.0" prefHeight="29.0" prefWidth="301.0" />
+      <TextField fx:id="tfWriter" editable="false" layoutX="286.0" layoutY="198.0" prefHeight="29.0" prefWidth="301.0" />
+      <TextField fx:id="tfRegDate" editable="false" layoutX="286.0" layoutY="266.0" prefHeight="29.0" prefWidth="301.0" />
+      <TextArea fx:id="taContent" editable="false" layoutX="286.0" layoutY="323.0" prefHeight="149.0" prefWidth="301.0" />
+      <Button layoutX="286.0" layoutY="510.0" mnemonicParsing="false" onAction="#moveToList" text="List To" />
+      <Button layoutX="479.0" layoutY="510.0" mnemonicParsing="false" onAction="#moveToUpdate" text="update" />
+      <Button layoutX="192.0" layoutY="510.0" mnemonicParsing="false" onAction="#moveToPrev" text="&lt;-Prev" />
+      <Button layoutX="597.0" layoutY="510.0" mnemonicParsing="false" onAction="#moveToNext" text="Next-&gt;" />
+      <Button layoutX="377.0" layoutY="510.0" mnemonicParsing="false" onAction="#moveToDelete" text="Delete" />
+   </children>
+</AnchorPane>
